@@ -48,8 +48,10 @@ document.getElementById('deposit-button').addEventListener('click', function () 
 document.getElementById('withdraw-button').addEventListener('click', function () {
     //call for withdraw input
     const withdrawAmount = getInputValue('withdraw-input');
+
     //call for get balance amount
     const balanceAmount = getBalanceAmount();
+
     if (withdrawAmount > 0 && balanceAmount >= withdrawAmount) {
         //call for total withdraw
         totalField('withdraw-total', withdrawAmount);
