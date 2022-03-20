@@ -10,6 +10,6 @@ document.getElementById('submit-button').addEventListener('click', function () {
         window.location.href = "banking.html";
     }
     else {
-        console.log('not a user');
+        alert('Not a user!!');
     }
 });
